@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root{
+    /* Font */
+    --Primary-font: 'Bai Jamjuree', sans-serif;
+
+    /* Font Weight */
+    --font-400: 400;
+    --font-600: 600;
+}
+
+:root{
+    /* Primay Colors */
+
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+
+    /* Neutral Colors */
+
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========== Layout ========== */
+.bd-container{
+    max-width: 1440px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+
+/* ========== Banner Content ========== */
+.banner-container{
+    background: url(/assets/img/bg-header-desktop.png) no-repeat;
+    background-size: cover;
+}
+
+.banner-content{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--Primary-font);
+
+}
+
+.banner-content .banner-logo img{
+    margin-top: 130px;
+    margin-bottom: 60px;
+}
+
+.banner-content .banner-text h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.banner-content .banner-text p{
+    font-size: 1.4rem;
+    max-width: 780px;
+    color: var(--Grayish-Blue);
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.banner-btn .ios{
+    background-color: var(--Strong-Cyan);
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1.2rem;
+    box-shadow: 0px 5px#4e8d7c;
+}
+
+.banner-btn .ios:hover, .banner-btn .mac:hover{
+  opacity: 0.5;
+}
+
+.banner-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.banner-btn a{
+    margin-right: 20px;
+}
+
+ .banner-btn .mac{
+    background-color: var(--Light-Blue);
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1.2rem;
+    box-shadow: 0px 5px #0e49b5;
+}
+/* ========== Banner Content END ========== */
+
+/* ========== Track Content ========== */
+.tracking-container{
+    margin-top: 130px;
+    overflow: hidden;
+}
+
+.tracking-content{
+    font-family: var(--Primary-font);
+}
+
+.tracking-content .top-text{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.top-text h2{
+    font-size: 2rem;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 20px;
+}
+
+.top-text p{
+    max-width: 750px;
+    color: var(--Grayish-Blue);
+    font-size: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.bottom-container{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-img img{
+    position: relative;
+    right: 50px;
+    max-width: 100%;
+    width: 750px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bottom-text{
+    margin-left: 60px;
+}
+
+.bottom-text .quick-search h3, .icloud-sync h3, .complete-history h3{   
+    font-size: 1.5rem;
+}
+
+.bottom-text .bottom-title{
+    color: var(--Dark-Grayish-Blue);
+    margin-top: 50px;
+}
+
+.bottom-text .text{
+    color: var(--Grayish-Blue);
+    max-width: 340px;
+}
+
+/* ========== Track Content END ========== */
+
+
+/* ========== Access Content ========== */
+.access-container{
+    margin-top: 130px;
+}
+
+ .access-content{
+    text-align: center;
+    font-family: var(--Primary-font);
+}
+
+.access-content .access-img img{
+    margin-top: 50px;
+    width: 980px;
+    max-width: 100%;
+}
+
+/* ========== Access Content END ========== */
+
+
+/* ========== Supercharge Content ========== */
+.supercharge-container{
+    margin-top: 50px;
+}
+
+.supercharge-content{
+    text-align: center;
+    font-family: var(--Primary-font);
+}
+
+.features-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 80px;
+}
+
+
+
+.features-container .feature-title{
+    color: var(--Dark-Grayish-Blue);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.features-container .feature-text{
+    max-width:  420px;
+    margin: 0 auto 40px auto;
+    color: var(--Grayish-Blue);
+    font-size: 1.2rem;
+}
+
+.company-logo{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+/* ========== Supercharge Content END ========== */
+
+/* ========== Clipboard Content ========== */
+.clipboard-container{
+    margin-top: 150px;
+}
+
+.clipboard-content{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--Primary-font);
+}
+/* ========== Clipboard Content END ========== */
+
+/* ========== Footer Content ========== */
+.footer-container{
+    margin-top: 130px;
+    background-color: #F5F6F8;
+    padding: 40px 40px;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content .footer-logo img{
+    width: 50px;
+    justify-self: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-text{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--Primary-font);
+}
+
+.footer-text a{
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: var(--Dark-Grayish-Blue);
+    font-size: 1rem;
+}
+
+.footer-text a:hover{
+    color: var(--Strong-Cyan);
+}
+
+
+.footer-content .footer-social{
+    justify-self:center;
+}
+
+.footer-content .footer-social a{
+    margin-right: 20px;
+    color: var(--Dark-Grayish-Blue);
+    font-size: 40px;
+}
+
+.footer-social a:hover{
+   color: var(--Strong-Cyan);
+}
+/* ========== Footer Content END========== */
+
+
+
+
+@media screen and (max-width: 768px){
+    .banner-container{
+        background: url(/assets/img/bg-header-mobile.png) no-repeat;
+        background-size: cover;
+    }
+
+    .top-text h2{
+        font-size: 1.8rem;
+    }
+
+    .top-text p{
+        font-size: 1.1rem;
+    }
+
+    .banner-content .banner-text p{
+        font-size: 1.4rem;
+    }
+
+    .tracking-content .bottom-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-container .bottom-text{
+        margin: 0;
+        text-align: center;
+    }
+
+    .bottom-container .bottom-text h3{
+        margin-bottom: 20px;
+        font-size: 2rem;
+    }
+
+    .bottom-container .bottom-text p{
+        font-size: 1.2rem;
+        max-width: 100%;
+    }
+
+    .bottom-container .bottom-img img{
+        position: static;
+        width: 650px;
+    }
+
+    /* ========== Supercharge Content ========== */
+    .features-container{
+        grid-template-columns: 1fr;
+    }
+
+    .company-logo{
+        grid-template-columns:  1fr;
+        grid-gap: 70px;
+    }
+    /* ========== Supercharge Content END ========== */
+
+    /* ========== Footer Content ========== */
+
+    .footer-content{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-text{
+        grid-template-columns: 1fr;
+        text-align: center;
+        grid-gap: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 1.5rem;
+    }
+
+
+    /* ========== Footer Content END ========== */
+
+}
+
+@media screen and (max-width: 600px){
+    /* ========== Banner Content ========== */
+    .banner-content .banner-text h1{
+        font-size: 1.8rem;
+    }
+
+    .banner-content .banner-text p{
+        font-size: 1rem;
+    }
+
+    .banner-btn{
+        display: flex;
+        flex-direction: column;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+     .banner-btn .ios{
+        margin-bottom: 20px;
+    }
+
+     .banner-btn a{
+        width: 100%;
+        margin: 0;
+    }
+    /* ========== Banner Content END ========== */
+
+    /* ========== Track Content ========== */
+    .bottom-container .bottom-text h3{
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
+    .bottom-container .bottom-text p{
+        font-size: 1rem;
+        max-width: 100%;
+    }
+    /* ========== Track Content END ========== */
+}
+
+
+
+@media screen and (min-width: 960px){
+    .bd-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
