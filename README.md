@@ -1,3 +1,3 @@
 Front-end Mentor Challenge
 
-Link:
+Link: https://clipboards-landing-page.netlify.app/
